@@ -1,0 +1,659 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lunasima&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lunasima&family=Noto+Sans&display=swap');  /* font-family: 'Roboto Mono', monospace; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bacasime Antique', serif;;
+    background-color: rgb(244, 236, 228);
+}
+
+/*global tag*/
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35,35,35);
+    padding-bottom: 10px;
+
+}
+
+span{
+    font-size: .9rem;
+    font-weight: 700;
+    color: #757373;
+    font-family: 'Lunasima', sans-serif;
+}
+h2{
+    font-size: 1rem;
+    color: rgb(154, 143, 131);
+}
+
+h6{
+    font-size: 1.3rem;
+    color: rgb(24, 24, 9);
+}
+
+/*navigation*/
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(244, 236, 228);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4vw 2.5vw;
+    box-shadow: 2px 2px 70px rgba(0, 0, 0, 5);
+    z-index: 2;
+}
+
+nav img{
+    width: 120px;
+    cursor: pointer;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+
+#menu-close{
+    display: none;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul input[type=text] {
+    margin-left: 30px;
+    padding: 7px;
+    border: none;
+    font-size: 13px;
+    border-radius: 3px;
+  }
+  
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 20px;
+    font-weight: 500;
+    transform: 0.3s ease;
+}
+
+nav .navigation ul li a:hover{
+    color:  rgb(128, 128, 221);;
+}
+
+
+
+/*start home*/
+#home {
+    background:url("image/back.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*
+#home::after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+*/
+
+
+
+#home h2{
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    z-index: 1;
+    margin-top: 80px;
+    font-family: -apple-system;
+    text-align: center;
+}
+
+#home p{
+    width: 50%;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 25px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+
+#home .btn a{
+    margin-left: 10px ;
+
+}
+
+#home a.blue{
+    color: white;
+    background: rgb(21, 21, 100);
+}
+
+#home a.blue:hover{
+    color: rgb(21, 21, 100);
+    background: white;
+}
+
+#home a.yellow{
+    color: rgb(28, 26, 26);
+    background: rgb(254, 242, 105);
+}
+
+#home a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: white;
+}
+
+
+/* start feature */
+
+#features {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+    background-color: rgb(244, 236, 228);
+}
+
+#features .fea-box{
+    background-color: rgb(244, 222, 208);
+    text-align: start;
+    padding: 20px 20px;
+}
+
+#features .fea-box i{
+    font-size: 2rem;
+    color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* start course */
+
+#course {
+    padding: 8w 8vw 0 8vw;
+    text-align: center;
+    margin: 80px;
+}
+
+#course .courses{
+    text-align: start;
+    background: white;
+    height: 100%;
+    border-radius: 8px;
+    background-color: rgb(244, 222, 208);
+    position: relative;
+}
+
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    padding: 2px 2px 2px 2px;
+    border-radius: 8px;
+}
+
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 50px;
+}
+
+#course .course-box .details{
+    padding: 15px 15px 0 15px;
+    color: rgb(46, 46, 59);
+
+}
+#course .course-box .details span{
+    color: rgb(255, 255, 255);
+    font-size: .9rem;
+}
+#course .course-box .details h6{
+    color: rgb(49, 49, 64);
+    padding: 2px 2px 2px 2px;
+
+}
+
+#course .course-box .details i{
+    color: rgb(249, 145, 165);
+    font-size: .9rem;
+
+}
+
+
+#course .courses .cost{
+    background-color: rgb(238, 117, 166);
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-family: Arial;
+}
+
+
+
+/*start registration*/
+
+#registration {
+    padding: 6vw 8vw 6vw 8vw;
+    background: url(image/regis.png) ;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+/* This is order for flex to determine room of flex the now we already have scale 
+so now we don't use it
+#registration > * {
+    flex: 1 1 50%;
+    
+   
+}
+*/
+#registration .remainder{
+    color: rgb(250, 249, 248);
+    
+}
+
+#registration .remainder p{
+    font-size: 1rem;
+    color: rgb(46, 39, 32);
+    font-family: 'Lunasima', sans-serif;
+}
+ 
+#registration .remainder h1{
+    color: rgb(46, 39, 32);
+    margin-top: 10px;
+    font-size: 3rem;
+}
+
+#registration .remainder .time{
+    display: flex;
+    margin-top: 40px;
+    font-family: -apple-system;
+}
+
+#registration .remainder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(231, 142, 159, 0.81);
+    backdrop-filter: blur(5px);
+    border-radius: 3px;
+    margin: 0 5px 10px 5px;
+    
+}
+
+
+
+#registration .form{
+    background: rgba(46, 46, 69, 0.71);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 400px;   
+}
+
+
+#registration .form h3{
+   color: rgb(244, 236, 228);
+}
+
+#registration .form input{
+    margin:  15px 0;
+    padding: 15px 10px;
+    border: 1px solid black ;
+    outline: none;
+    border-radius: 3px;
+}
+
+#registration .form a.yellow{
+    color: rgb(255, 249, 249);
+    background: rgba(168, 86, 86, 0.91);
+}
+
+#registration .form a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: white;
+}
+
+#registration .form a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+#registration .form .btn {
+    margin-top: 10px;
+}
+
+
+/* Experts */
+#experts{
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+#experts .expert-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#experts .expert-box .profile{
+    background-color: rgb(238, 225, 212);
+    padding: 30px 10px;
+}
+
+#experts .expert-box .profile img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    padding: 35px;
+}
+
+#experts .expert-box .profile h6{
+    padding-bottom: 10px;
+}
+
+#experts .expert-box .profile p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.7rem;
+    padding-bottom: 20px;
+}
+
+.pro-links i {
+    padding: 7px 10px;
+    border: 1px solid rgb(189, 112, 121);
+    color: rgb(183, 110, 118);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pro-links i:hover{
+    background:  rgb(189, 112, 121) ;
+    color: rgb(249, 237, 238);
+    cursor: pointer;
+}
+
+footer {
+    padding: 8vw;
+    background-color: rgb(238, 225, 212);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+
+footer .footer-col h3{
+    color: rgb(21, 21, 100);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer .footer-col li{
+    list-style: none;
+    color: rgb(84, 75, 65);
+    padding: 8px 0;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer .footer-col li:hover{
+    color: rgb(29, 16, 4);
+    cursor: pointer;
+}
+
+
+footer .footer-col p{
+    color: rgb(67, 67, 125);
+}
+
+
+footer .subscribe{
+    margin-top: 20PX;
+}
+
+
+footer .subscribe input{
+    width: 220;
+    padding: 15px 12px;
+    background-color: rgb(233, 192, 150);
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+
+}
+
+footer .subscribe a {
+    color: rgb(218, 177, 137);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+footer .subscribe a:hover {
+    color: rgb(248, 244, 234);
+    background-color:   rgb(233, 192, 150);
+}
+
+@media screen and (max-width: 769px){
+    nav{
+         padding: 15px 20px;
+    }
+    nav img{
+        width: 100px;
+    }
+
+    #experts .expert-box .profile{
+        padding: 25px 50px;
+    }
+
+    #experts .expert-box .profile img{
+        padding: 20px;
+    }
+
+    
+    #menu-btn{
+        display: initial;
+    }
+
+    #menu-btn:hover{
+        background-color: rgba(166, 166, 231, 0.508);
+        border-radius: 5px;
+    }
+
+    #menu-close{
+        display: initial;
+        font-size: 1.6rem;
+        color: white;
+        padding: 15px 0 20px 20px;
+    }
+
+
+    
+
+    nav .navigation ul{
+        position: absolute;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background: rgba(113, 93, 99, 0.44);
+        -webkit-backdrop-filter: blur(15px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 1s ease;
+    }
+
+    nav .navigation ul.active{
+        right: 0;
+    }
+
+    nav .navigation ul li{
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a{
+        color: white;
+    }
+
+    #features {
+        padding: 5vw 11vw 0 11vw;
+    }
+
+
+/*
+ #registration {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #registration .remainder{
+        text-align: center;
+        
+    }
+    
+    #registration .remainder .time{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #registration .remainder .time .date{
+        padding: 13px 33px;
+        margin: 0 5px 10px 5px;
+        
+    }
+   
+    
+    #registration .form{
+        padding: 40px;
+        width: 390px;   
+    }
+
+    #course .course-box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    #course .course-box .details span {
+        font-size: .7rem;
+    }
+
+    #course .course-box .details h6 {
+        font-size: .9rem;
+    }
+
+    #course .courses .cost {
+        line-height: 62px;
+        width: 60px;
+        height: 60px;
+        right: 12px;
+        bottom: 10px;
+    }
+
+    #experts .expert-box .profile h6 { 
+        font-size: 1rem;
+    }
+   
+
+
+*/
+   
+  
+    
+    
+
+}
